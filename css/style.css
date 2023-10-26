@@ -1,0 +1,638 @@
+body {
+    margin: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Stili dell'header/nav  */
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.function li:hover {
+    background-color: antiquewhite;
+    color: brown;
+    text-decoration: underline;
+}
+
+#perchedropbox {
+    position: relative;
+}
+#perchedropbox:active #dropboxhover{
+    display:block
+}
+
+#dropboxhover {
+    display: none;
+    position: fixed;
+    z-index: 502;
+    width: 18%;
+    top: 80px;
+    left: 160px;
+    background-color: antiquewhite;
+}
+
+#dropboxhover li {
+    list-style: none;
+}
+
+ul li {
+    font-size: 15px;
+    padding: 12px;
+}
+
+#droplogo {
+    display: block;
+    padding-left: 10px;
+
+}
+
+/* classe button centralizzata per tutta la pagina  */
+
+.button {
+    color: white;
+    background-color: rgb(94, 94, 248);
+    padding: 10px;
+}
+
+/* Stili Sezione Jumbotron */
+
+.jumbotron {
+    padding-top: 80px;
+    width: 100%;
+    background-color: aqua;
+    /* height: 700px; */
+    margin: auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.container70 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: left;
+    padding: 30px;
+    padding-left: 0;
+}
+
+.jumbottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbo-left {
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-basis: 45%;
+    width: 45%;
+
+}
+
+.jumbo-left div {
+    margin-top: 20px;
+    
+}
+
+.jumbo-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: 55%;
+    position: relative;
+    z-index: 499;
+
+}
+
+#jumbo-img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    /* right: 0; */
+    bottom: -50px;
+}
+
+#arrow {
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+/* Inizio sezione Main  */
+
+/* Container60 allinea tutto fino a Brand Gallery esclusa */
+
+.container60 {
+    margin: auto;
+    width: 60%;
+}
+
+/* Piano di Business  */
+
+/* Business Top  */
+
+.business-top { padding-top: 100px;
+}
+
+.plan {
+    padding-top: 15px;
+}
+
+.business-top h2 {
+    padding: 5px;
+    font-size: 35px;
+
+}
+.plan input[type="radio"] { 
+    padding-right: 20px;
+}
+
+/* Business Plan diviso in 3 macro-colonne. Comprende anche la sezione sottostante ENterprise  */
+
+.business-plan {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.col {
+    /* display: flex;
+    flex-direction: column;
+    flex-basis: 30%; */
+    width: 30%;
+    border: 1px solid black;
+}
+
+.col:only-child {
+    padding: 30px;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.plan-type {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid black;
+
+}
+
+/* Stile per tipo di abbonamento */
+
+.subscription, .free-subscription, .buy, .highlights {
+    padding: 20px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscription h3 {
+    font-size: 20px;
+    font-weight: 900;
+}
+.price {
+    font-weight: 900;
+}
+.frequency {
+    color: gray;
+    font-style: italic;
+    font-size: 10px;
+}
+.features {
+    list-style: none;
+    padding-left: 10px;
+}
+
+
+
+.free-subscription {
+    margin: auto;
+    text-align: center;
+}
+.buy-now {
+    color: rgb(103, 103, 236);
+    text-decoration: underline;
+}
+
+
+.line {
+    width: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    border-top: 1px solid gray;
+}
+
+/* Stili modifier del button per renderlo a larghezza fissa  */
+
+.centered {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+/* Stile parte sottostante della sezione plan-type  */
+
+.highlights h4 {
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.list {
+    list-style: none;
+     padding: 0;
+}
+
+.list li {
+    padding-left: 10px;
+}
+
+.list li::before {
+    color: rgb(127, 127, 230);
+    content: '\f00c';
+    padding-right: 10px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+/* Mini sezione Enterprise  */
+
+.enterprise {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.enter-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter-left {
+    flex-basis: 65%;
+    padding-left: 25px;
+    /* display: flex; */   
+}
+
+.enter-right {
+    flex-basis: 30%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.enter-left h6 {
+    margin: 0;
+}
+
+/* Sezione Partner  */
+
+.partner {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+}
+
+.partner-img {
+    flex-basis: 60%;
+}
+
+.partner-img img {
+    max-width: 100%;
+}
+
+.partner-text {
+    flex-basis: 40%;
+    padding:45px;
+    padding-top: 20px;
+}
+
+.partner-text > * {
+    padding-top: 30px;
+}
+
+.partner-text h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.back-none {
+    background: none;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Sezione Dropbox-Business  */
+
+.dropbox-business {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.dropbox-business h2 {
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-business {
+    flex-basis: 30%;
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.bus-img {
+    flex-basis: 40%;
+}
+
+.bus-img img {
+    max-width: 100%;
+}
+
+.sub-title {
+    flex-basis: 20%;
+}
+
+.paragraph {
+    flex-basis: 30%;
+    font-weight: 100;
+}
+
+/* Sezione Business Bottom  */
+
+.business-bottom {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.business-bottom div {
+    padding-top: 20px;
+}
+
+/* Brand Gallery */
+
+.brand-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-brand {
+    display: flex;
+    flex-basis: calc(100% / 1.5);
+}
+
+.left, .center, .right {
+    flex-basis: calc(100% / 3);
+}
+
+.left, .right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.square {
+    flex-basis: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.square:hover {
+    border: 10px solid rgba(0, 0, 0, 0.445);
+}
+
+.square img {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+    align-items: center; 
+    filter: brightness(0);
+    filter: invert(1);
+
+}
+
+.center {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(250, 242, 232);
+    scroll-behavior: auto;
+}
+
+.center > p, div {
+    font-weight: 100;
+}
+
+.gray-row {
+    border-bottom: 1px solid gray;
+    width: 25%;
+    height: 13%;
+    align-items: center;
+}
+
+.none {opacity: 0;}
+
+/* Stili dei background  */
+
+.lightgreen {background-color: lightgreen;}
+.red {background-color: rgb(129, 9, 9)}
+.lightblue {background-color: rgb(67, 175, 241);}
+.red-orange {background-color: rgb(236, 41, 41);}
+.lightred {background-color: red;}
+.aliceblue {background-color: rgb(173, 215, 252);}
+.blue {background-color: blue;}
+.yellow {background-color: rgb(214, 214, 4);}
+
+/* Brand Bottom  */
+
+.brand-bottom {
+    background-color: rgb(173, 215, 252) ;
+    margin: auto;
+    width: 100%;
+    }
+
+.cont-brand-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.cont-brand-bottom h3 {
+    color: rgb(129, 9, 9);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.back-white {
+    background-color: white;
+    color: black;
+}
+
+/* Sezione FAQ  */
+
+.faq {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title, .questions {
+    font-weight: 700;
+    border-bottom: 1px solid rgb(170, 167, 167);
+}
+
+.title {
+    font-size: 30px;
+    padding-bottom: 44px;
+}
+
+.questions {
+    font-size: 12px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.questions::after {
+    color: black;
+    content: '\f107';
+    padding-right: 30px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 12px;
+    float: right;
+
+}
+
+/* Sezione Footer  */
+
+footer {
+    background-color: black;
+    color: white;
+    margin: auto;
+    height: 550px;
+}
+
+.row-foot {
+    display: flex;
+    width: 75%;
+    padding-top: 100px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    position: relative;
+
+}
+
+.infobox {
+    flex-basis: calc(100% / 5);
+    color: white;
+}
+.infobox ul {
+    list-style: none;
+}
+.mini-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.language {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: grey;
+    display: flex;
+    margin-left: 40px;
+    border-top: 1px solid grey;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+}
+
+.language > * {
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    
+}
+
+
+
