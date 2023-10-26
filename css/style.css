@@ -565,7 +565,7 @@ h1 {
     padding-bottom: 44px;
 }
 
-.questions {
+.questions, .answer {
     font-size: 12px;
     padding-top: 22px;
     padding-bottom: 22px;
@@ -579,7 +579,16 @@ h1 {
     font-weight: 900;
     font-size: 12px;
     float: right;
+}
 
+.answer {
+    display:none;
+    width: 60%;
+
+}
+
+.questions:hover .answer {
+    display: block;
 }
 
 /* Sezione Footer  */
